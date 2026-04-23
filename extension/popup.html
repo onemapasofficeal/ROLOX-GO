@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { width:280px; background:#111; color:#fff; font-family:Arial,sans-serif; }
+    .header { background:#0d0d0d; padding:12px 16px; display:flex; align-items:center; gap:10px; border-bottom:1px solid #222; }
+    .header img { width:28px; height:28px; border-radius:4px; }
+    .header h1 { font-size:1rem; color:#00a2ff; }
+    .header span { font-size:.72rem; color:#555; margin-left:auto; }
+    .section { padding:10px 16px; border-bottom:1px solid #1a1a1a; }
+    .section-title { font-size:.72rem; color:#555; margin-bottom:6px; text-transform:uppercase; letter-spacing:.5px; }
+    .btn { display:flex; align-items:center; gap:8px; width:100%; padding:8px 10px; background:#1a1a1a; border:none; color:#ccc; font-size:.85rem; cursor:pointer; border-radius:6px; margin-bottom:4px; text-decoration:none; }
+    .btn:hover { background:#222; color:#fff; }
+    .btn img { width:16px; height:16px; border-radius:2px; }
+    .status { padding:8px 16px; font-size:.75rem; color:#555; text-align:center; }
+    .badge { background:#00a2ff22; color:#00a2ff; border-radius:4px; padding:1px 6px; font-size:.7rem; margin-left:auto; }
+    #userInfo { padding:10px 16px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #1a1a1a; }
+    #userInfo img { width:32px; height:32px; border-radius:50%; background:#333; }
+    #userName { font-size:.88rem; font-weight:bold; }
+    #userId { font-size:.72rem; color:#555; }
+  </style>
+</head>
+<body>
+<div class="header">
+  <img src="icons/roblox-rolox.png" alt="Rolox"/>
+  <h1>ROLOX</h1>
+  <span id="version">v1.0.0</span>
+</div>
+
+<div id="userInfo">
+  <img id="avatarImg" src="icons/roblox-rolox.png"/>
+  <div>
+    <div id="userName">Carregando...</div>
+    <div id="userId"></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Navegação rápida</div>
+  <a class="btn" id="btnHome" href="#" target="_blank">
+    <img src="icons/roblox-rolox.png"/> Abrir Rolox Web
+  </a>
+  <a class="btn" href="https://www.roblox.com" target="_blank">
+    🌐 Roblox.com
+  </a>
+  <a class="btn" href="https://www.roblox.com/my/messages" target="_blank">
+    💬 Mensagens
+  </a>
+  <a class="btn" href="https://www.roblox.com/catalog" target="_blank">
+    🛍 Mercado
+  </a>
+</div>
+
+<div class="section">
+  <div class="section-title">Extensão</div>
+  <button class="btn" id="btnReplace">
+    🔄 Substituir ícones agora
+    <span class="badge">Manual</span>
+  </button>
+  <button class="btn" id="btnToggle">
+    ✅ Extensão ativa
+  </button>
+</div>
+
+<div class="status" id="status">Rolox Extension v1.0.0 — One Mapas Official</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
