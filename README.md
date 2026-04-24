@@ -14,7 +14,9 @@ Rolox é um cliente alternativo do Roblox para Windows, desenvolvido pela One Ma
 Ele permite jogar, explorar jogos populares, gerenciar amizades e hospedar servidores privados gratuitos diretamente do seu PC.
 
 ---
+## studio 
 
+baixe rolox studio em https://github.com/onemapasofficeal/ROLOX-STUDIO-GO 
 ## Funcionalidades
 
 - Login com conta Roblox via Edge
